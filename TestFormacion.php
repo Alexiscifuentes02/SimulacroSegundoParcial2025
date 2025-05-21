@@ -9,9 +9,9 @@
     $objetoLocomotora = new Locomotora(188000,140);
 
     //|2|
-    $objetoVagon1 = new VagonPasajeros(2000,80,30,15000,0,30,25);
-    $objetoVagon2 = new VagonCarga(2001,30,201,15000,0,90000,55000);
-    $objetoVagon3 = new VagonPasajeros(2002,140,230,15000,0,50,50);
+    $objetoVagon1 = new VagonPasajeros(2000,80,30,15000,30,25);
+    $objetoVagon2 = new VagonCarga(2001,30,201,15000,90000,55000);
+    $objetoVagon3 = new VagonPasajeros(2002,140,230,15000,50,50);
 
     //|3|
     $objetoFormacion = new Formacion($objetoLocomotora,10);
