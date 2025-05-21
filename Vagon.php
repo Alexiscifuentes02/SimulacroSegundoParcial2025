@@ -73,8 +73,8 @@
         } 
 
         public function vagonLleno(){
-            $estaCompleto = true;
-            return $estaCompleto;
+            $lleno = true;
+            return $lleno;
         }
 
         
