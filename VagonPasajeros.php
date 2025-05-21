@@ -5,8 +5,8 @@
         private $pesoPromedio;
 
         // Metodo constructor de la clase VagonPasajeros
-        public function __construct($nAnio,$nLargo,$nAncho,$vagonVacio,$nPeso,$cantMax,$cantActual){
-            parent::__construct($nAnio,$nLargo,$nAncho,$vagonVacio,$nPeso);
+        public function __construct($nAnio,$nLargo,$nAncho,$vagonVacio,$cantMax,$cantActual){
+            parent::__construct($nAnio,$nLargo,$nAncho,$vagonVacio);
             $this->cantidadMaxPasajeros = $cantMax;
             $this->cantActualPasajeros = $cantActual;
             $this->pesoPromedio = 50;
