@@ -5,8 +5,8 @@
         private $indice;
 
         // Metodo constructor de la clase VagonCarga
-        public function __construct($nAnio,$nLargo,$nAncho,$vagonVacio,$nPeso,$pesoMaximo,$actPeso){
-            parent::__construct($nAnio,$nLargo,$nAncho,$vagonVacio,$nPeso);
+        public function __construct($nAnio,$nLargo,$nAncho,$vagonVacio,$pesoMaximo,$actPeso){
+            parent::__construct($nAnio,$nLargo,$nAncho,$vagonVacio);
             $this->pesoMaximo = $pesoMaximo;
             $this->pesoActual = $actPeso;
             $this->indice = 0.2 * $actPeso;
