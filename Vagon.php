@@ -7,12 +7,12 @@
         private $pesoVagonVacio;
 
         // Metodo constructor de la clase Vagon
-        public function __construct($nAnio,$nLargo,$nAncho,$vagonVacio,$nPeso){
+        public function __construct($nAnio,$nLargo,$nAncho,$vagonVacio){
             $this->anioInstalacion = $nAnio;
             $this->largo = $nLargo;
             $this->ancho = $nAncho;
             $this->pesoVagonVacio = $vagonVacio;
-            $this->pesoVagon = $nPeso + $vagonVacio;
+            $this->pesoVagon = $vagonVacio;
         }
 
         // Metodos GET de la clase Vagon
@@ -73,7 +73,8 @@
         } 
 
         public function vagonLleno(){
-            return $this->pesoVagonVacio;
+            $estaCompleto = true;
+            return $estaCompleto;
         }
 
         
