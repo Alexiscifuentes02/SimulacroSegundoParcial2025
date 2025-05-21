@@ -126,10 +126,12 @@
         public function pesoFormacion(){
             $pesoTotal = 0;
             $colVagones = $this->getArrayVagones();
+            $pesoLocomotora = $this->getObjetoLocomotora()->getPeso();
             foreach($colVagones as $vagon){
                 $pesoTotal += $vagon->calcularPesoVagon();
             }
-
+            $pesoTotal += $pesoLocomotora;
+            
             return $pesoTotal; 
         }
 
