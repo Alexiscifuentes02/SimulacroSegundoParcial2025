@@ -52,7 +52,7 @@
             $pesoVagon = parent::calcularPesoVagon();
             $pesoPasajeros = $this->getCantActualPasajeros() * $this->getPesoPromedio();
             $pesoVagon += $pesoPasajeros;
-            parent::setPesoVagon($pesoVagon);
+            $this->setPesoVagon($pesoVagon);
             return $pesoVagon;
         }
 
