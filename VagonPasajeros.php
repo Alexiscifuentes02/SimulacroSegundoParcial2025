@@ -79,7 +79,6 @@
             $cantActual = $this->getCantActualPasajeros();
             if($cantActual >= $cantMax){
                 $lleno = true;
-                echo "HOLAAAAAAAA\n";
             }
             return $lleno;
         }
