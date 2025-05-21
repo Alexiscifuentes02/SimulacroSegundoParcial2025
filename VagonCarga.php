@@ -52,7 +52,7 @@
             $indice = $this->getIndice();
             $pesoActual = $this->getPesoActual();
             $pesoVagon += $indice + $pesoActual;
-            parent::setPesoVagon($pesoVagon);
+            $this->setPesoVagon($pesoVagon);
             return $pesoVagon;
         }
 
